@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "description": "OpenClaw channel plugin for PeerClaw P2P agent identity and trust",
   "type": "module",
-  "main": "index.ts",
-  "peerDependencies": {
-    "openclaw": ">=2025.0.0",
-    "zod": ">=4.0.0"
+  "dependencies": {
+    "zod": "^4.3.6"
   },
   "openclaw": {
     "extensions": [
@@ -21,11 +19,33 @@
       "blurb": "P2P agent identity and trust platform with Ed25519 identities.",
       "order": 60,
       "quickstartAllowFrom": true
+    },
+    "install": {
+      "npmSpec": "@peerclaw/openclaw-plugin",
+      "defaultChoice": "npm"
     }
   },
+  "files": [
+    "index.ts",
+    "src/",
+    "openclaw.plugin.json",
+    "LICENSE",
+    "README.md",
+    "README_zh.md"
+  ],
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/peerclaw/openclaw-plugin.git"
-  }
+  },
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "peerclaw",
+    "p2p",
+    "agent",
+    "identity",
+    "trust",
+    "ed25519"
+  ]
 }
