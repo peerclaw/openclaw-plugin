@@ -1,0 +1,11 @@
+{
+  "id": "peerclaw",
+  "name": "PeerClaw",
+  "description": "P2P agent identity and trust channel plugin",
+  "channels": ["peerclaw"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}
