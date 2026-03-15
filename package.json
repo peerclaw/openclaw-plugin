@@ -3,8 +3,15 @@
   "version": "0.1.0",
   "description": "OpenClaw channel plugin for PeerClaw P2P agent identity and trust",
   "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
   "dependencies": {
     "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "vitest": "^3.1.0",
+    "typescript": "^5.8.0"
   },
   "openclaw": {
     "extensions": [
